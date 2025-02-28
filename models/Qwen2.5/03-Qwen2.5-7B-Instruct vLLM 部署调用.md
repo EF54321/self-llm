@@ -56,7 +56,7 @@ pip install vllm==0.6.1.post2
 ```python
 # model_download.py
 from modelscope import snapshot_download
-model_dir = snapshot_download('qwen/Qwen2.5-7B-Instruct', cache_dir='/root/autodl-tmp', revision='master')
+model_dir = snapshot_download('qwen/Qwen2.5-7B-Instruct', cache_dir='/root/autodl-tmp', revision='master')  
 ```
 
 然后在终端中输入 `python model_download.py` 执行下载，这里需要耐心等待一段时间直到模型下载完成。
@@ -101,7 +101,7 @@ def get_completion(prompts, model, tokenizer=None, max_tokens=512, temperature=0
 
 if __name__ == "__main__":    
     # 初始化 vLLM 推理引擎
-    model='/root/autodl-tmp/qwen/Qwen2.5-7B-Instruct' # 指定模型路径
+    model='/root/autodl-tmp/qwen/Qwen2___5-7B-Instruct' # 指定模型路径
     # model="qwen/Qwen2.5-7B-Instruct" # 指定模型名称，自动下载模型
     tokenizer = None
     # 加载分词器后传入vLLM 模型，但不是必要的。
